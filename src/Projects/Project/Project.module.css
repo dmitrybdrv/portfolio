@@ -1,0 +1,34 @@
+.project {
+    width: 280px;
+    background-color: #c5dcc6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.projectContainer {
+    width: 100%;
+    height: 200px;
+    background-color: #f4bba6;
+//background-image: url("https://valuefinance.in/wp-content/uploads/2020/05/report.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainerButton {
+    background-color: #e2e0e1;
+    padding: 5px;
+}
+
+.projectTitle {
+background-color: #b1c9d6;
+}
+
+.projectDescription {
+    background-color: #c5dce8;
+}
