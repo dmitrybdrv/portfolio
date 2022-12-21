@@ -1,6 +1,6 @@
 .mainBlock {
     background-color: #c7deea;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .greetingBlock {
