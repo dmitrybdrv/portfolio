@@ -1,6 +1,8 @@
 .contactBlock {
     background-color: #b1c9d6;
-    min-height: 40vh;
+    min-height: 50vh;
+    display: flex;
+    align-items: center
 }
 
 .contactContainer {

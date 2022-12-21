@@ -17,9 +17,9 @@ export const Contact: React.FC<ContactType> = ({}) => {
                 <div className={style.contactForm}>
 
                     <form>
-                        <div><input type="text"/> Name</div>
-                        <div><input type="email"/> Email</div>
-                        <textarea name="Message" id="textarea" cols={30} rows={10}></textarea>
+                        <div><input type="text" placeholder={'Your name'}/><span>Name</span></div>
+                        <div><input type="email" placeholder={'Your email address'}/><span>Email</span></div>
+                        <textarea name="Message" id="textarea" cols={28} rows={10} placeholder={'Send your message to me!)'}></textarea>
                         <div><input type="submit"/></div>
                     </form>
 
