@@ -21,6 +21,7 @@ export const Footer: React.FC<FooterType> = ({}) => {
                     <div className={style.socialItem}></div>
                     <div className={style.socialItem}></div>
                 </div>
+
                 <span className={style.footerPrivacy}>© Design Portfolio 2022</span>
 
             </div>
