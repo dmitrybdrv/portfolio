@@ -17,7 +17,6 @@
 }
 
 .footerSocialContainer {
-    /*width: 280 px;*/
     min-height: 100px;
     display: flex;
     justify-content: space-around;
