@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './App.module.css';
+import style from './App.module.scss';
 import {Header} from "./Header/Header";
 import {Main} from "./Main/Main";
 import {Skills} from "./Skill`s/Skills";
@@ -13,6 +13,8 @@ function App() {
         <div className={style.app}>
             <Header/>
             <Main/>
+
+
             <Skills/>
             <Projects/>
             <Contact/>

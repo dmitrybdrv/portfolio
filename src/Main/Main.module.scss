@@ -1,0 +1,138 @@
+.mainBlock {
+  border: none;
+  background: #303134;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+
+  .greetingBlock {
+    background: #303134;
+
+    top: 0px;
+
+    position: relative;
+    transition: all .4s ease;
+    border: 0;
+    margin: 0;
+
+
+    & span {
+      color: #d7f544;
+      display: inline-block;
+      margin-bottom: 16px;
+      font-family: 'Poppins-regular';
+      font-weight: 500;
+    }
+
+    & h3 {
+      color: #fff;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: 1.4;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-family: 'Poppins-extra-bold';
+    }
+
+    .shortInfo {
+      width: 100%;
+      height: auto;
+      clear: both;
+      float: left;
+      margin-bottom: 35px;
+
+      & ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        vertical-align: baseline;
+        outline: none;
+
+        & li {
+          color: #fff;
+          width: 100%;
+          float: left;
+          margin: 0px;
+          font-size: 17px;
+          display: inline-block;
+          padding: 8px 0px;
+          position: relative;
+          text-decoration: none;
+          transition: all .3s ease;
+        }
+
+        & li:hover {
+          cursor: pointer;
+          color: #d7f544;
+        }
+      }
+    }
+
+    .counterInfo {
+      width: 100%;
+      height: auto;
+      clear: both;
+      float: left;
+      display: block;
+
+      & ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 0;
+
+        & li {
+          margin: 0px 50px 15px 0px;
+          display: inline-block;
+
+
+          & .listInner {
+            margin: 0;
+
+            display: flex;
+            align-items: center;
+
+            & h3 {
+              color: #fff;
+              font-size: 45px;
+              font-weight: 600;
+              line-height: 1.2;
+              font-family: 'Poppins-bold';
+            }
+
+            & span {
+              font-family: "Poppins-regular";
+              padding-left: 15px;
+              display: inline-block;
+              line-height: 1.4;
+              position: relative;
+              top: -3px;
+              font-size: 14px;
+              color: #a7afbd;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .profilePhoto {
+    display: flex;
+    justify-content: center;
+
+
+      & img {
+        //transform: rotate(15deg);
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        border-radius: 20px;
+      }
+
+
+  }
+
+}

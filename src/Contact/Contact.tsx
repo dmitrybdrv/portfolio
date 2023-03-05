@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Contact.module.css'
-import styleContainer from "../Common/Styles/Container.module.css";
+import styleContainer from "../Common/Styles/Container.module.scss";
 
 
 export type ContactType = {}

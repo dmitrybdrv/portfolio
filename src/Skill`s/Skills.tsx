@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Skills.module.css'
-import styleContainer from '../Common/Styles/Container.module.css'
+import style from './Skills.module.scss'
+import styleContainer from '../Common/Styles/Container.module.scss'
 import {Skill} from "./skill/Skill";
 
 
@@ -10,11 +10,15 @@ export const Skills: React.FC<SkillsType> = ({}) => {
 
 
     return (
-        <div className={style.skillsBlock}>
+        <section>
 
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
 
-                <h2 className={style.title}>SkillSet</h2>
+                <div className={style.title}>
+                    <span>Skills</span>
+                    <h3>PROGRAMMING SKILLS</h3>
+                </div>
+
 
                 <div className={style.skills}>
                     <Skill title={'React'}
@@ -34,6 +38,6 @@ export const Skills: React.FC<SkillsType> = ({}) => {
 
             </div>
 
-        </div>
+        </section>
     );
 };

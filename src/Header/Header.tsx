@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import {Nav} from "../Nav/Nav";
 
 
@@ -10,8 +10,9 @@ export const Header: React.FC<HeaderType> = ({}) => {
 
 
     return (
-        <div className={style.header}>
+        <header className={style.header}>
+            <h3>Dmitry Bodrov</h3>
             <Nav/>
-        </div>
+        </header>
     );
 };
