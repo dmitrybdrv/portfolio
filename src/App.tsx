@@ -13,9 +13,9 @@ function App() {
         <div className={style.app}>
             <Header/>
             <Main/>
-
-
             <Skills/>
+
+
             <Projects/>
             <Contact/>
             <Footer/>

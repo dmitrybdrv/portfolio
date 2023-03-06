@@ -1,31 +1,33 @@
 section {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #494b50;
   display: flex;
   justify-content: center;
-  align-items: self-start;
+  align-items: center;
   padding-top: 50px;
 
 
+
   .skillsContainer {
+
     width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    //align-items: center;
     flex-wrap: wrap;
-
-
     visibility: visible;
 
-    /*flex-direction: column;*/
+    flex-direction: column;
 
     .title {
-
+      padding-bottom: 60px;
       width: fit-content;
       height: auto;
       clear: both;
-      float: left;
+
+
+
 
       span {
         color: #d7f544;
@@ -48,6 +50,7 @@ section {
     }
 
     .skills {
+
       width: 100%;
       display: flex;
       flex-wrap: wrap;
