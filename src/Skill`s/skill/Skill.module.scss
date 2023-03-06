@@ -98,8 +98,9 @@
       }
 
       span:hover {
+        color: #d8f744;
         background: transparent;
-        transition: all .5s ease;
+        transition: all .1s ease;
         cursor: context-menu;
       }
     }

@@ -1,24 +1,24 @@
 import React from 'react';
-import style from './Project.module.css'
+import style from './Project.module.scss'
 
 export type ProjectType = {
     title: string
     description: string
+    image: string
 }
 
-export const Project: React.FC<ProjectType> = ({title, description}) => {
+export const Project: React.FC<ProjectType> = ({title, description, image}) => {
+
 
     return (
-        <div className={style.project}>
+        <div className={style.flip_card}>
 
-            <div className={style.projectContainer}>
-                <a href="#" className={style.projectContainerButton}>Explore</a>
-            </div>
+            {/*<img src={'image'} alt="Avatar" */}
+            {/*<div style={{backgroundSize: "cover", backgroundImage: `url(${image})`}}  />    </div>*/}
 
-            <h3 className={style.projectTitle}>{title}</h3>
-
-            <span className={style.projectDescription}>{description}</span>
+            <div className={style.flip_image} style={{backgroundSize: "cover", backgroundImage: `url(${image})`}}>  </div>
 
         </div>
     );
 };
+

@@ -1,0 +1,32 @@
+.flip_card {
+
+
+  .flip_image {
+    width: 360px;
+    height: 410px;
+    margin: 20px;
+    border-radius: 20px;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .flip_image {
+      width: 240px;
+      height: 274px;
+      margin: 10px;
+    }
+  }
+
+@media screen and (max-width: 360px) {
+  .flip_image {
+    width: 180px;
+    height: 205px;
+    margin: 10px;
+  }
+}
+}
+
+
+
+
+

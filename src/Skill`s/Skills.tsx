@@ -21,7 +21,7 @@ export const Skills: React.FC<SkillsType> = ({}) => {
 
 
     return (
-        <section>
+        <div className={style.section}>
 
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
 
@@ -34,7 +34,7 @@ export const Skills: React.FC<SkillsType> = ({}) => {
                 <div className={style.skills}>
                     <Skill title={'React'} image={react}/>
                     <Skill title={'Typescript'} image={typescript}/>
-                    <Skill title={'SASS'} image={scss}/>
+                    <Skill title={'SCSS'} image={scss}/>
                     <Skill title={'TDD'} image={tdd}/>
                     <Skill title={'Redux'} image={redux}/>
                     <Skill title={'StoryBook'} image={storybook}/>
@@ -49,6 +49,6 @@ export const Skills: React.FC<SkillsType> = ({}) => {
 
             </div>
 
-        </section>
+        </div>
     );
 };

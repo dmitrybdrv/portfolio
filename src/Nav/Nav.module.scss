@@ -11,4 +11,10 @@
     color: #d7f544;
     position: relative;
   }
+
+  @media screen and (max-width: 360px) {
+    width: 100%;
+    justify-content: space-around;
+
+  }
 }
