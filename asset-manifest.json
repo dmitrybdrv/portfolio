@@ -1,26 +1,37 @@
 {
   "files": {
-    "main.css": "/portfo/static/css/main.14a3d78c.css",
-    "main.js": "/portfo/static/js/main.4e5783f3.js",
+    "main.css": "/portfo/static/css/main.88e4ba20.css",
+    "main.js": "/portfo/static/js/main.8cc52989.js",
     "static/js/787.1f11dfe9.chunk.js": "/portfo/static/js/787.1f11dfe9.chunk.js",
     "static/media/AnyConv.com__Poppins-Regular.woff2": "/portfo/static/media/AnyConv.com__Poppins-Regular.202bc7e425c7a8926961.woff2",
     "static/media/AnyConv.com__Poppins-Bold.woff2": "/portfo/static/media/AnyConv.com__Poppins-Bold.8380d1b7b29b8c68a35b.woff2",
     "static/media/AnyConv.com__Poppins-ExtraBold.woff2": "/portfo/static/media/AnyConv.com__Poppins-ExtraBold.8a69d9f03bdd3b9fcc90.woff2",
     "static/media/AnyConv.com__Poppins-Thin.woff2": "/portfo/static/media/AnyConv.com__Poppins-Thin.adbd3f3083d75289a620.woff2",
-    "static/media/1.jpg": "/portfo/static/media/1.5d4d6210305b8e486abc.jpg",
     "static/media/AnyConv.com__Poppins-Regular.woff": "/portfo/static/media/AnyConv.com__Poppins-Regular.c496ea9e1a7e635b4aec.woff",
     "static/media/AnyConv.com__Poppins-Bold.woff": "/portfo/static/media/AnyConv.com__Poppins-Bold.40b4e64bce0f7fa6cc17.woff",
     "static/media/AnyConv.com__Poppins-ExtraBold.woff": "/portfo/static/media/AnyConv.com__Poppins-ExtraBold.5392ebf1da7f2d2d93fc.woff",
     "static/media/AnyConv.com__Poppins-Thin.woff": "/portfo/static/media/AnyConv.com__Poppins-Thin.29b66f2b3efa4d207d6f.woff",
+    "static/media/rea4.jpg": "/portfo/static/media/rea4.64f5da2bb4d336a18a8a.jpg",
+    "static/media/react.svg": "/portfo/static/media/react.e184e9098d6a84689b653b5dff34e1bb.svg",
     "static/media/AnyConv.com__tet.woff2": "/portfo/static/media/AnyConv.com__tet.980c7c27e0007e16b5b5.woff2",
     "static/media/AnyConv.com__tet.woff": "/portfo/static/media/AnyConv.com__tet.4c181d3b9d03b521ef4b.woff",
+    "static/media/sass.svg": "/portfo/static/media/sass.9828e6c7c9d6bab6c7965f62bd23b2ef.svg",
+    "static/media/redux.svg": "/portfo/static/media/redux.3e89892383bc341c82cd9a6115e42d4e.svg",
+    "static/media/test.svg": "/portfo/static/media/test.e33e77db2a76f680e49948a5acc6a0ca.svg",
+    "static/media/swagger.svg": "/portfo/static/media/swagger.106380f3a963504229a38404d8051ff4.svg",
+    "static/media/nodejs.svg": "/portfo/static/media/nodejs.f989cac29dab648bd29db561dfd8fccc.svg",
+    "static/media/postman.svg": "/portfo/static/media/postman.1d7edaecb26d83fcb1832655212f8a38.svg",
+    "static/media/git.svg": "/portfo/static/media/git.c6ab2c5876d68e217c0b3a33234537d6.svg",
+    "static/media/javascript.svg": "/portfo/static/media/javascript.46505e51012fcc2b9095c8125e6fd075.svg",
+    "static/media/typescript.svg": "/portfo/static/media/typescript.205d385f7625a2144da3ab124d609590.svg",
+    "static/media/storybook-svgrepo-com.svg": "/portfo/static/media/storybook-svgrepo-com.caaa331c09f679ef05d3ab1662783d83.svg",
     "index.html": "/portfo/index.html",
-    "main.14a3d78c.css.map": "/portfo/static/css/main.14a3d78c.css.map",
-    "main.4e5783f3.js.map": "/portfo/static/js/main.4e5783f3.js.map",
+    "main.88e4ba20.css.map": "/portfo/static/css/main.88e4ba20.css.map",
+    "main.8cc52989.js.map": "/portfo/static/js/main.8cc52989.js.map",
     "787.1f11dfe9.chunk.js.map": "/portfo/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14a3d78c.css",
-    "static/js/main.4e5783f3.js"
+    "static/css/main.88e4ba20.css",
+    "static/js/main.8cc52989.js"
   ]
 }
