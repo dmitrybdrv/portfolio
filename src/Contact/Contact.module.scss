@@ -1,0 +1,128 @@
+.section {
+  min-height: 80vh;
+  background-color: #1a1d1f;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+
+  .contactContainer {
+    display: block;
+
+    .title {
+      padding-bottom: 40px;
+      width: fit-content;
+      height: auto;
+      clear: both;
+
+      span {
+        color: #d7f544;
+        display: inline-block;
+        margin-bottom: 16px;
+        font-family: 'Poppins-regular', sans-serif;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.2;
+        font-family: 'Poppins-extra-bold', sans-serif;
+        margin-bottom: 25px;
+      }
+    }
+
+    .wrapper {
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 4%;
+
+      .infoSide {
+
+        p {
+          color: #a7afbd;
+          margin-bottom: 35px;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          line-height: 2.4rem;
+
+          li {
+            color: #d8f744;
+
+            span {
+              color: #a7afbd;
+              padding-left: 10px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .formSide {
+
+        input {
+          background: transparent;
+          font-family: 'Poppins-regular', sans-serif;
+          width: 100%;
+          line-height: 2.4rem;
+          border: 1px solid #636465;
+          margin: 10px 0;
+          padding-left: 10px;
+          color: #fff;
+        }
+
+        textarea {
+          font-family: 'Poppins-regular', sans-serif;
+          width: 100%;
+          resize: none;
+          border: 1px solid #636465;
+          background: transparent;
+          padding-left: 10px;
+          color: #fff;
+        }
+
+        button {
+          margin: 10px 0;
+          width: 100%;
+          line-height: 2.4rem;
+          background: #d8f744;
+          border: 1px;
+          font-size: 18px;
+        }
+
+        button:hover {
+          color: #fff;
+          cursor: pointer;
+          background: #000000;
+        }
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .contactContainer {
+
+      .wrapper {
+        display: block;
+        text-align: center;
+
+        .infoSide {
+
+          ul {
+            text-align: left;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
