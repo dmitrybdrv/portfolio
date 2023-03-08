@@ -1,6 +1,8 @@
+@import '../Common/variables';
+
 .section {
-  min-height: 100vh;
-  background-color: #303134;
+  min-height: 80vh;
+  background-color: $background_primary;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,27 +19,26 @@
       clear: both;
 
       span {
-        color: #d7f544;
+        color: $primary_color;
         display: inline-block;
         margin-bottom: 16px;
-        font-family: 'Poppins-regular', sans-serif;
+        font-family: $regular_Font, sans-serif;
         font-weight: 500;
       }
 
       h3 {
         font-weight: 800;
         text-transform: uppercase;
-        color: #fff;
+        color: $white_color;
         font-size: 30px;
         line-height: 1.2;
-        font-family: 'Poppins-extra-bold', sans-serif;
+        font-family: $extraBold_Font, sans-serif;
         margin-bottom: 25px;
       }
     }
 
     .projectsWrapper {
       flex-wrap: wrap;
-      max-width: 1200px;
 
       .projects {
         display: flex;
@@ -63,7 +64,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 0;
+    padding: 40px;
 
     .projectsContainer {
 

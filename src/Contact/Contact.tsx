@@ -32,7 +32,6 @@ export const Contact: React.FC<ContactType> = ({}) => {
                         </p>
 
                         <ul>
-                            <li><FaLocationArrow/><span>44 Place, Tokyo, Japan</span></li>
                             <li><FaLocationArrow/><span>Place, Tokyo, Japan</span></li>
                             <li><AiOutlinePhone/><span>+77 033 442 55 57</span></li>
                             <li><AiTwotoneMail/><span>dodo@gmail.com</span></li>

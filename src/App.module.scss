@@ -1,3 +1,5 @@
+@import './Common/variables';
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -33,6 +35,6 @@ dd {
 
 
 .app {
-    font-family: 'Poppins-regular';
-    background: gray;
+    font-family: $regular_Font;
+    background: #303134;
 }

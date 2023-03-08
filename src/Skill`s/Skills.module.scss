@@ -1,42 +1,57 @@
-.section {
-  min-height: 80vh;
-  background-color: #1a1d1f;
-  display: flex;
-  //justify-content: flex-start;
-  align-items: center;
-  padding: 40px;
+@import '../Common/variables';
 
+.section {
+  min-height: 100vh;
+  background: $background_secondary;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  align-items: center;
 
   .skillsContainer {
-    background: #a7afbd;
+    place-content: center;
     display: block;
 
     .title {
       padding-bottom: 40px;
-      width: fit-content;
-      height: auto;
-      clear: both;
 
       span {
-        color: #d7f544;
-        display: inline-block;
-        margin-bottom: 16px;
-        font-family: 'Poppins-regular', sans-serif;
+        display: block;
+        color: $primary_color;
+        font-family: $regular_Font, sans-serif;
         font-weight: 500;
+        margin-bottom: 16px;
       }
 
       h3 {
         font-weight: 800;
         text-transform: uppercase;
-        color: #fff;
+        color: $white_color;
         font-size: 30px;
         line-height: 1.2;
-        font-family: 'Poppins-extra-bold', sans-serif;
+        font-family: $extraBold_Font, sans-serif;
         margin-bottom: 25px;
       }
     }
 
+    .skillWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      p {
+
+        color: $white_color;
+        margin: 20px;
+      }
+
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+
 
   }
+
 
 }

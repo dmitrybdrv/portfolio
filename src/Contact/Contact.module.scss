@@ -1,3 +1,5 @@
+@import '../Common/variables';
+
 .section {
   min-height: 80vh;
   background-color: #1a1d1f;
@@ -16,10 +18,10 @@
       clear: both;
 
       span {
-        color: #d7f544;
+        color: $primary_color;
         display: inline-block;
         margin-bottom: 16px;
-        font-family: 'Poppins-regular', sans-serif;
+        font-family: $regular_Font, sans-serif;
         font-weight: 500;
       }
 
@@ -29,7 +31,7 @@
         color: #fff;
         font-size: 30px;
         line-height: 1.2;
-        font-family: 'Poppins-extra-bold', sans-serif;
+        font-family: $extraBold_Font, sans-serif;
         margin-bottom: 25px;
       }
     }
@@ -44,7 +46,7 @@
       .infoSide {
 
         p {
-          color: #a7afbd;
+          color: $light_color;
           margin-bottom: 35px;
         }
 
@@ -54,10 +56,10 @@
           line-height: 2.4rem;
 
           li {
-            color: #d8f744;
+            color: $primary_color;
 
             span {
-              color: #a7afbd;
+              color: $light_color;
               padding-left: 10px;
               font-size: 18px;
             }
@@ -69,38 +71,38 @@
 
         input {
           background: transparent;
-          font-family: 'Poppins-regular', sans-serif;
+          font-family: $regular_Font, sans-serif;
           width: 100%;
           line-height: 2.4rem;
           border: 1px solid #636465;
           margin: 10px 0;
           padding-left: 10px;
-          color: #fff;
+          color: $white_color;
         }
 
         textarea {
-          font-family: 'Poppins-regular', sans-serif;
+          font-family: $regular_Font, sans-serif;
           width: 100%;
           resize: none;
           border: 1px solid #636465;
           background: transparent;
           padding-left: 10px;
-          color: #fff;
+          color: $white_color;
         }
 
         button {
           margin: 10px 0;
           width: 100%;
           line-height: 2.4rem;
-          background: #d8f744;
+          background: $primary_color;
           border: 1px;
           font-size: 18px;
         }
 
         button:hover {
-          color: #fff;
+          color: $white_color;
           cursor: pointer;
-          background: #000000;
+          background: $black_color;
         }
       }
     }

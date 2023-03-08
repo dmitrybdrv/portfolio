@@ -1,12 +1,14 @@
+@import '../Common/variables.scss';
+
 footer {
   min-height: 10vh;
-  background-color: #494b50;
+  background-color: $background_secondary;
   display: flex;
 
 
   .footerContainer {
     align-items: center;
-    color: #fff;
+    color: $white_color;
 
     .info {
       width: 100%;
@@ -23,7 +25,7 @@ footer {
           font-size: 20px;
 
           a {
-            color: #fff;
+            color: $white_color;
           }
         }
       }

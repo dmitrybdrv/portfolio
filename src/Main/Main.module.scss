@@ -1,6 +1,8 @@
+@import '../Common/variables';
+
 .mainBlock {
   border: none;
-  background: #303134;
+  background: $background_primary;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,10 +10,8 @@
 
 
   .greetingBlock {
-    background: #303134;
-
-    top: 0px;
-
+    background: $background_primary;
+    top: 0;
     position: relative;
     transition: all .4s ease;
     border: 0;
@@ -19,21 +19,21 @@
 
 
     & span {
-      color: #d7f544;
+      color: $primary_color;
       display: inline-block;
       margin-bottom: 16px;
-      font-family: 'Poppins-regular';
+      font-family: $regular_Font;
       font-weight: 500;
     }
 
     & h3 {
-      color: #fff;
+      color: $white_color;
       font-size: 45px;
       font-weight: 800;
       line-height: 1.4;
       text-transform: uppercase;
       margin-bottom: 25px;
-      font-family: 'Poppins-extra-bold';
+      font-family: $extraBold_Font;
     }
 
     .shortInfo {
@@ -44,7 +44,7 @@
       margin-bottom: 35px;
 
       & ul {
-        margin: 0px;
+        margin: 0;
         list-style-type: none;
         padding: 0;
         background: transparent;
@@ -53,13 +53,13 @@
         outline: none;
 
         & li {
-          color: #fff;
+          color: $white_color;
           width: 100%;
           float: left;
-          margin: 0px;
+          margin: 0;
           font-size: 17px;
           display: inline-block;
-          padding: 8px 0px;
+          padding: 8px 0;
           position: relative;
           text-decoration: none;
           transition: all .3s ease;
@@ -67,7 +67,7 @@
 
         & li:hover {
           cursor: pointer;
-          color: #d7f544;
+          color: $primary_color;
         }
       }
     }
@@ -80,12 +80,12 @@
       display: block;
 
       & ul {
-        margin: 0px;
+        margin: 0;
         list-style-type: none;
         padding: 0;
 
         & li {
-          margin: 0px 50px 15px 0px;
+          margin: 0 50px 15px 0;
           display: inline-block;
 
 
@@ -96,22 +96,22 @@
             align-items: center;
 
             & h3 {
-              color: #fff;
+              color: $white_color;
               font-size: 45px;
               font-weight: 600;
               line-height: 1.2;
-              font-family: 'Poppins-bold';
+              font-family: $bold_Font;
             }
 
             & span {
-              font-family: "Poppins-regular";
+              font-family: $regular_Font;
               padding-left: 15px;
               display: inline-block;
               line-height: 1.4;
               position: relative;
               top: -3px;
               font-size: 14px;
-              color: #a7afbd;
+              color: $light_color;
             }
           }
         }
@@ -133,6 +133,10 @@
         width: 50%;
         border-radius: 20px;
       }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px;
   }
 
 }
