@@ -1,6 +1,6 @@
 import React from 'react';
-import style from './Header.module.scss'
-import {Nav} from "../Nav/Nav";
+import style from 'features/header/Header.module.scss'
+import {Nav} from "features/nav/Nav";
 
 
 export type HeaderType = {}

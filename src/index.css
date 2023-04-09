@@ -1,35 +1,35 @@
 @font-face {
   font-family: 'Poppins-thin';
-  src: local('Poppins-thin'), url(Assets/Fonts/AnyConv.com__Poppins-Thin.woff) format('woff'),
-  url(Assets/Fonts/AnyConv.com__Poppins-Thin.woff2) format('woff2');
+  src: local('Poppins-thin'), url(assets/fonts/AnyConv.com__Poppins-Thin.woff) format('woff'),
+  url(assets/fonts/AnyConv.com__Poppins-Thin.woff2) format('woff2');
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-regular';
-  src: local('Poppins-regular'), url(Assets/Fonts/AnyConv.com__Poppins-Regular.woff) format('woff'),
-  url(Assets/Fonts/AnyConv.com__Poppins-Regular.woff2) format('woff2');
+  src: local('Poppins-regular'), url(assets/fonts/AnyConv.com__Poppins-Regular.woff) format('woff'),
+  url(assets/fonts/AnyConv.com__Poppins-Regular.woff2) format('woff2');
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-bold';
-  src: local('Poppins-bold'), url(Assets/Fonts/AnyConv.com__Poppins-Bold.woff) format('woff'),
-  url(Assets/Fonts/AnyConv.com__Poppins-Bold.woff2) format('woff2');
+  src: local('Poppins-bold'), url(assets/fonts/AnyConv.com__Poppins-Bold.woff) format('woff'),
+  url(assets/fonts/AnyConv.com__Poppins-Bold.woff2) format('woff2');
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins-extra-bold';
-  src: local('Poppins-extra-bold'), url(Assets/Fonts/AnyConv.com__Poppins-ExtraBold.woff) format('woff'),
-  url(Assets/Fonts/AnyConv.com__Poppins-ExtraBold.woff2) format('woff2');
+  src: local('Poppins-extra-bold'), url(assets/fonts/AnyConv.com__Poppins-ExtraBold.woff) format('woff'),
+  url(assets/fonts/AnyConv.com__Poppins-ExtraBold.woff2) format('woff2');
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'TET';
-  src: local('TET'), url(Assets/Fonts/AnyConv.com__tet.woff) format('woff'),
-  url(Assets/Fonts/AnyConv.com__tet.woff2) format('woff2');
+  src: local('TET'), url(assets/fonts/AnyConv.com__tet.woff) format('woff'),
+  url(assets/fonts/AnyConv.com__tet.woff2) format('woff2');
   font-style: normal;
   font-display: swap;
 }

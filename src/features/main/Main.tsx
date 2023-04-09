@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './Main.module.scss'
-import styleContainer from '../Common/Styles/Container.module.scss'
-import me from '../Assets/img/1.jpg'
+import style from 'features/main/Main.module.scss'
+import styleContainer from 'common/styles/Container.module.scss'
+import me from 'assets/img/1.jpg'
 
 
 export type MainType = {}

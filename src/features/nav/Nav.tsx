@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Nav.module.scss'
+import style from 'features/nav/Nav.module.scss'
 
 
 export type NavType = {}

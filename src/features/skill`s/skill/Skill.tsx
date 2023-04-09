@@ -1,7 +1,5 @@
 import React from 'react';
-import style from './Skill.module.scss'
-import {ReactNode} from 'react'
-import test from '../../Assets/img/r1.jpg'
+import style from 'features/skill`s/skill/Skill.module.scss'
 
 
 export type SkillType = {

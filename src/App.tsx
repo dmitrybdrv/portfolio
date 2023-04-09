@@ -1,11 +1,11 @@
 import React from 'react';
 import style from './App.module.scss';
-import {Header} from "./Header/Header";
-import {Main} from "./Main/Main";
-import {Skills} from "./Skill`s/Skills";
-import {Projects} from "./Projects/Projects";
-import {Contact} from "./Contact/Contact";
-import {Footer} from "./Footer/Footer";
+import {Header} from "./features/header/Header";
+import {Main} from "./features/main/Main";
+import {Skills} from "./features/skill`s/Skills";
+import {Projects} from "./features/projects/Projects";
+import {Contact} from "./features/contact/Contact";
+import {Footer} from "./features/footer/Footer";
 
 
 function App() {

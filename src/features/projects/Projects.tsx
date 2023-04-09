@@ -1,15 +1,14 @@
 import React from 'react';
-import style from './Projects.module.scss'
-import styleContainer from "../Common/Styles/Container.module.scss";
-import {Project} from "./Project/Project";
-import proj4 from '../Assets/img/proj4.jpg'
-import proj5 from '../Assets/img/proj5.jpg'
-import proj6 from '../Assets/img/proj6.jpg'
+import style from 'features/projects/Projects.module.scss'
+import styleContainer from "common/styles/Container.module.scss";
+import proj4 from 'assets/img/proj4.jpg'
+import proj5 from 'assets/img/proj5.jpg'
+import proj6 from 'assets/img/proj6.jpg'
 import {GrCaretPrevious} from 'react-icons/gr'
 import {GrCaretNext} from 'react-icons/gr'
-import proj1 from '../Assets/img/proj1.jpg'
-import proj2 from '../Assets/img/proj2.jpg'
-import proj3 from '../Assets/img/proj3.jpg'
+import {Project} from "features/projects/project/Project";
+
+
 
 export type ProjectsType = {}
 
