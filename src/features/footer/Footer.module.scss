@@ -1,10 +1,8 @@
 @import 'common/variables';
+@import 'common/mixins';
 
 footer {
-  min-height: 10vh;
-  background-color: $background_secondary;
-  display: flex;
-
+  @include section(10vh, center, $background_secondary);
 
   .footerContainer {
     align-items: center;
@@ -25,7 +23,7 @@ footer {
           font-size: 20px;
 
           a {
-            color: $white_color;
+            color: $primary_color;
           }
         }
       }
@@ -44,18 +42,11 @@ footer {
           padding: 0;
           justify-content: center;
         }
+
       }
 
     }
 
   }
+
 }
-
-
-
-
-
-
-
-
-

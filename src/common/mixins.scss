@@ -1,0 +1,17 @@
+@mixin container() {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  visibility: visible;
+}
+
+@mixin section($minHeight, $justContent, $bgColor) {
+  min-height: $minHeight;
+  display: flex;
+  justify-content: $justContent;
+  align-items: center;
+  padding: 40px;
+  background: $bgColor;
+  flex-wrap: wrap;
+}

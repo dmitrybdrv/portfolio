@@ -1,13 +1,9 @@
 import React from 'react';
 import style from 'features/header/Header.module.scss'
-import {Nav} from "features/nav/Nav";
+import {Nav} from "features/header/nav/Nav";
 
 
-export type HeaderType = {}
-
-
-export const Header: React.FC<HeaderType> = ({}) => {
-
+export const Header: React.FC = () => {
 
     return (
         <header className={style.header}>

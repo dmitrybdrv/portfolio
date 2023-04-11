@@ -1,17 +1,13 @@
 @import 'common/variables';
+@import 'common/mixins';
 
 header {
+  @include section(10, space-between, $background_primary);
   width: 100%;
-  height: 80px;
-  background: $background_primary;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-right: 10%;
   position: fixed;
   opacity: 50%;
   z-index: 90;
-
 
   h3 {
     opacity: 20%;
@@ -30,7 +26,7 @@ header {
     h3 {
       display: none;
     }
+
   }
 
 }
-

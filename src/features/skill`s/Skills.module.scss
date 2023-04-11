@@ -1,38 +1,13 @@
 @import 'common/variables';
+@import 'common/mixins';
 
 .section {
-  min-height: 100vh;
-  background: $background_secondary;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  align-items: center;
+  @include section(100vh, center, $background_secondary);
 
   .skillsContainer {
+    @include container;
     place-content: center;
     display: block;
-
-    .title {
-      padding-bottom: 40px;
-
-      span {
-        display: block;
-        color: $primary_color;
-        font-family: $regular_Font, sans-serif;
-        font-weight: 500;
-        margin-bottom: 16px;
-      }
-
-      h3 {
-        font-weight: 800;
-        text-transform: uppercase;
-        color: $white_color;
-        font-size: 30px;
-        line-height: 1.2;
-        font-family: $extraBold_Font, sans-serif;
-        margin-bottom: 25px;
-      }
-    }
 
     .skillWrapper {
       display: flex;
@@ -47,11 +22,5 @@
 
     }
   }
-
-  @media only screen and (max-width: 768px) {
-
-
-  }
-
 
 }

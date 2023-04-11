@@ -1,16 +1,15 @@
 @import 'common/variables';
+@import 'common/mixins';
 
-.mainBlock {
-  border: none;
-  background: $background_primary;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
+.section {
+  @include section(100vh, space-between, $background_primary);
+  @include container();
+  justify-content: space-between;
   padding-bottom: 50px;
+  width: 100%;
 
 
   .greetingBlock {
-    background: $background_primary;
     top: 0;
     position: relative;
     transition: all .4s ease;
@@ -44,6 +43,7 @@
       margin-bottom: 35px;
 
       & ul {
+        display: grid;
         margin: 0;
         list-style-type: none;
         padding: 0;
@@ -54,11 +54,10 @@
 
         & li {
           color: $white_color;
-          width: 100%;
+          width: fit-content;
           float: left;
           margin: 0;
           font-size: 17px;
-          display: inline-block;
           padding: 8px 0;
           position: relative;
           text-decoration: none;
@@ -120,23 +119,26 @@
   }
 
   .profilePhoto {
-    display: flex;
-    justify-content: center;
 
-
-
-
-      & img {
-        transform: rotate(15deg);
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        border-radius: 20px;
-      }
+    .photo1 {
+      transform: rotate(15deg);
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      max-width: 300px;
+    }
   }
 
   @media screen and (max-width: 768px) {
     padding: 40px;
+
   }
+  @media screen and (max-width: 320px) {
+    .greetingBlock h3 {
+      font-size: 30px;
+    }
+
+  }
+
 
 }

@@ -1,40 +1,11 @@
 @import 'common/variables';
+@import 'common/mixins';
 
 .section {
-  min-height: 80vh;
-  background-color: #1a1d1f;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 40px;
+  @include section(80vh, center, #111111);
 
   .contactContainer {
-    display: block;
-
-    .title {
-      padding-bottom: 40px;
-      width: fit-content;
-      height: auto;
-      clear: both;
-
-      span {
-        color: $primary_color;
-        display: inline-block;
-        margin-bottom: 16px;
-        font-family: $regular_Font, sans-serif;
-        font-weight: 500;
-      }
-
-      h3 {
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 30px;
-        line-height: 1.2;
-        font-family: $extraBold_Font, sans-serif;
-        margin-bottom: 25px;
-      }
-    }
+    @include container;
 
     .wrapper {
       flex-direction: column;
@@ -63,6 +34,7 @@
               padding-left: 10px;
               font-size: 18px;
             }
+
           }
         }
       }
@@ -106,7 +78,6 @@
         }
       }
     }
-
   }
 
   @media only screen and (max-width: 768px) {
@@ -123,6 +94,7 @@
             text-align: left;
             padding: 0;
           }
+
         }
       }
     }

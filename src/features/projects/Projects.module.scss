@@ -1,41 +1,13 @@
 @import 'common/variables';
+@import 'common/mixins';
 
 .section {
-  min-height: 80vh;
-  background-color: $background_primary;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 40px;
+  @include section(80vh, flex-start, $background_primary);
 
   .projectsContainer {
+    @include container;
     display: block;
     place-content: center;
-
-    .title {
-      padding-bottom: 40px;
-      width: fit-content;
-      height: auto;
-      clear: both;
-
-      span {
-        color: $primary_color;
-        display: inline-block;
-        margin-bottom: 16px;
-        font-family: $regular_Font, sans-serif;
-        font-weight: 500;
-      }
-
-      h3 {
-        font-weight: 800;
-        text-transform: uppercase;
-        color: $white_color;
-        font-size: 30px;
-        line-height: 1.2;
-        font-family: $extraBold_Font, sans-serif;
-        margin-bottom: 25px;
-      }
-    }
 
     .projectsWrapper {
       flex-wrap: wrap;
@@ -64,7 +36,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 40px;
+    //padding: 40px;
 
     .projectsContainer {
 

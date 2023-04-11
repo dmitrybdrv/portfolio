@@ -1,0 +1,26 @@
+@import 'common/variables';
+
+.title {
+  padding-bottom: 40px;
+  width: fit-content;
+  height: auto;
+  clear: both;
+
+  span {
+    color: $primary_color;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: $regular_Font, sans-serif;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: $extraBold_Font, sans-serif;
+    margin-bottom: 25px;
+  }
+}

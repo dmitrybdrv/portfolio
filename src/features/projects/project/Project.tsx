@@ -13,7 +13,7 @@ export const Project: React.FC<ProjectType> = ({title, description, image}) => {
     return (
         <div className={style.flip_card}>
 
-            <div className={style.flip_image} style={{backgroundSize: "cover", backgroundImage: `url(${image})`}}>  </div>
+            <div className={style.flip_image} style={{backgroundSize: "cover", backgroundImage: `url(${image})`}}>{title}</div>
 
         </div>
     );
