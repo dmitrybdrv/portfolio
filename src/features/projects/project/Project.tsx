@@ -1,21 +1,32 @@
 import React from 'react';
 import style from 'features/projects/project/Project.module.scss'
+import sn from "../../../assets/img/socialN.jpg";
+import {motion} from "framer-motion";
+
+
 
 export type ProjectType = {
-    title: string
-    description: string
     image: string
+    description: string
+    projectLink: string
 }
 
-export const Project: React.FC<ProjectType> = ({title, description, image}) => {
+export const Project: React.FC<ProjectType> = ({image, description, projectLink}) => {
+
 
 
     return (
-        <div className={style.flip_card}>
+        <motion.div className={style.item}>
+            <div className={style.aboutItem}>
+                <span>
+                    <a href={projectLink} target={'_blank'}>
+                         {description}
+                    </a>
+                </span>
+            </div>
+                <img src={image} alt="project"/>
 
-            <div className={style.flip_image} style={{backgroundSize: "cover", backgroundImage: `url(${image})`}}>{title}</div>
-
-        </div>
+        </motion.div>
     );
 };
 

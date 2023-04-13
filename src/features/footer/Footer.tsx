@@ -11,20 +11,16 @@ export const Footer: React.FC = () => {
         <footer>
 
             <div className={style.footerContainer}>
-
                 <Slide direction={'right'}>
                     <div className={style.info}>
-
                         <span>Copyright © 2021. All rights reserved.</span>
                         <ul>
-                            <li><a href="#"><GrLinkedinOption/></a></li>
-                            <li><a href="#"><FaTelegramPlane/></a></li>
-                            <li><a href="#"><TbBrandGithub/></a></li>
+                            <li><a href="https://www.linkedin.com/in/dmitry-bodrov/" target={'_blank'} rel="noopener noreferrer"><GrLinkedinOption/></a></li>
+                            <li><a href="https://t.me/DMITRYBDRV" target={'_blank'} rel="noopener noreferrer"><FaTelegramPlane/></a></li>
+                            <li><a href="https://github.com/dmitrybdrv" target={'_blank'} rel="noopener noreferrer"><TbBrandGithub/></a></li>
                         </ul>
-
                     </div>
                 </Slide>
-
             </div>
 
         </footer>

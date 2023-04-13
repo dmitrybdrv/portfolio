@@ -1,17 +1,25 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import style from 'features/projects/Projects.module.scss'
-import proj4 from 'assets/img/proj4.jpg'
-import proj5 from 'assets/img/proj5.jpg'
-import proj6 from 'assets/img/proj6.jpg'
-import {GrCaretNext, GrCaretPrevious} from 'react-icons/gr'
-import {Project} from "features/projects/project/Project";
 import {Title} from 'common/components/Title';
 import {Slide} from 'react-awesome-reveal';
+import sn from 'assets/img/socialN.jpg'
+import cntr from 'assets/img/counter.jpg'
+import {motion} from "framer-motion";
+import td from 'assets/img/todo.jpg'
+import empt from 'assets/img/Empty.jpg'
+import {Project} from "./project/Project";
 
 
-export type ProjectsType = {}
+export const Projects: React.FC = () => {
+    const [width, setWidth] = useState(0)
+    const carousel = useRef() as React.MutableRefObject<HTMLInputElement>
 
-export const Projects: React.FC<ProjectsType> = ({}) => {
+
+    useEffect(() => {
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+    }, [])
+
+
 
     return (
         <div id={'projects'} className={style.section}>
@@ -19,38 +27,31 @@ export const Projects: React.FC<ProjectsType> = ({}) => {
                 <div className={style.projectsContainer}>
 
                     <Slide>
-
                     <Title title={'Portfolio'} description={'SELECTED WORKS'}/>
+                        <div className={style.projectsWrapper}>
 
-                    <div className={style.projectsWrapper}>
+                            <motion.div
+                                ref={carousel}
+                                className={style.carousel}
+                                whileTap={{cursor: 'grabbing'}}>
 
-                        <div className={style.projects}>
+                                <motion.div
+                                    drag={'x'}
+                                    dragConstraints={{right: 0, left: - width}}
+                                    className={style.inner_}>
 
-                            <Project title={'Social network'}
-                                     description={'Some description. Lorem ipsum dolor'}
-                                     image={proj4}/>
+                                    <Project image={sn} description={'Social network'} projectLink={'https://dmitrybdrv.github.io/Social_network/'}/>
+                                    <Project image={cntr} description={'Counter'} projectLink={'https://dmitrybdrv.github.io/counter/'}/>
+                                    <Project image={td} description={'To do list'} projectLink={'https://dmitrybdrv.github.io/todo_list/#/login'}/>
+                                    <Project image={empt} description={'In progress...'} projectLink={'https://www.timeanddate.com/worldclock/'}/>
 
-                            <Project title={'Calculator'}
-                                     image={proj5}
-                                     description={'Some description ......Lorem ipsum dolor sit amet, ' +
-                                         'nima saepe temporibus ullam velit.'}/>
 
-                            <Project title={'Todo list'}
-                                     image={proj6}
-                                     description={'Some description ....' +
-                                         '..Lorem ipsum dolor sit amet, consectetur ' +
-                                         'adipisicing elit. Atque, blanditiis consectetur cumque facere non voluptas?'}/>
+                                </motion.div>
 
+
+                            </motion.div>
 
                         </div>
-                        <div className={style.pagination}>
-                            <div className={style.step}>
-                                <span><GrCaretPrevious/></span>
-                                <span><GrCaretNext/></span>
-                            </div>
-                        </div>
-
-                    </div>
                     </Slide>
 
                 </div>

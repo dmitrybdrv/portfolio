@@ -2,12 +2,16 @@
 @import 'common/mixins';
 
 header {
-  @include section(10, space-between, $background_primary);
+  @include section(10px, space-between, $background_primary);
   width: 100%;
-  padding-right: 10%;
   position: fixed;
   opacity: 50%;
   z-index: 90;
+  padding: 20px;
+
+  .navigation {
+    padding-right: 10%;
+  }
 
   h3 {
     opacity: 20%;

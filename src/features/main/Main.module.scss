@@ -4,10 +4,9 @@
 .section {
   @include section(100vh, space-between, $background_primary);
   @include container();
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 50px;
   width: 100%;
-
 
   .greetingBlock {
     top: 0;
@@ -15,7 +14,6 @@
     transition: all .4s ease;
     border: 0;
     margin: 0;
-
 
     & span {
       color: $primary_color;
@@ -65,9 +63,18 @@
         }
 
         & li:hover {
-          cursor: pointer;
-          color: $primary_color;
+          cursor: default;
         }
+
+        .typing {
+          margin: 0;
+          color: #fff;
+
+          & span {
+            font-weight: bold;
+          }
+        }
+
       }
     }
 
@@ -119,19 +126,65 @@
   }
 
   .profilePhoto {
+    display: flex;
+    position: relative;
 
-    .photo1 {
-      transform: rotate(15deg);
-      display: flex;
-      justify-content: center;
-      border-radius: 20px;
-      max-width: 300px;
+    .loader {
+      @include loader(250px, 250px, 0, 4s)
     }
+    .loader:before {
+      @include loaderBeforeAfter(6px, 6px, 6px, 6px, 1000)
+    }
+    .loader:after {
+      @include loaderBeforeAfter(0px, 0px, 0px, 0px, 1);
+      background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+    }
+    .photo1 {
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      width: 250px;
+      height: 250px;
+    }
+
+    .loader2 {
+      @include loader(294px, 294px, -1, 2s);
+      top: 0;
+      bottom: 0;
+      left: -80px;
+    }
+    .loader2:before {
+      @include loaderBeforeAfter(6px, 6px, 6px, 6px, 1);
+    }
+    .loader2:after {
+      @include loaderBeforeAfter(0px, 0px, 0px, 0px, -3);
+      background: linear-gradient(45deg, transparent, transparent 40%, #05f8af);
+    }
+    .photo2 {
+      position: absolute;
+      border-radius: 50%;
+      bottom: 0;
+      right: 73px;
+      z-index: -1;
+    }
+
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+      }
+    }
+
+
   }
 
   @media screen and (max-width: 768px) {
     padding: 40px;
-
   }
   @media screen and (max-width: 320px) {
     .greetingBlock h3 {
@@ -139,6 +192,5 @@
     }
 
   }
-
 
 }

@@ -8,7 +8,9 @@ export const Header: React.FC = () => {
     return (
         <header className={style.header}>
             <h3>Dmitry Bodrov</h3>
-            <Nav/>
+            <div className={style.navigation}>
+                <Nav/>
+            </div>
         </header>
     );
 };

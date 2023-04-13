@@ -4,33 +4,24 @@ import style from 'features/skill`s/skill/Skill.module.scss'
 
 export type SkillType = {
     title: string
-
+    description: string
     image?: string,
 }
 
-export const Skill: React.FC<SkillType> = ({title, image}) => {
-
+export const Skill: React.FC<SkillType> = ({title, image, description}) => {
 
 
     return (
 
-        <div className={style.skill}>
-
-            <div className={style.title}>
-                {title}
-            </div>
-
-            <div className={style.image}>
-                <img src={image} alt="skill"/>
-            </div>
-{/*            <div className={style.innerBox}>
-                <div className={style.imageBox}>
-                    <img src={image} alt=""/>
+        <div className={style.wrapper}>
+                <div className={style.card}>
+                    <img src={image} alt="skill"/>
+                    <div className={style.info}>
+                        <h3>{title}</h3>
+                        <p>{description}</p>
+                    </div>
                 </div>
-                <div className={style.cat}>
-                    <span>{title}</span>
-                </div>
-            </div>*/}
+
         </div>
     );
 };

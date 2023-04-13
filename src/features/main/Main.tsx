@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import style from 'features/main/Main.module.scss'
 import {Slide} from "react-awesome-reveal";
-import me from 'assets/img/me2.jpg'
+import me from 'assets/img/profilePhoto.png'
+import me2 from 'assets/img/me22.png'
+import ReactTypingEffect from 'react-typing-effect';
 
 export const Main: React.FC = () => {
 
 
     return (
-
         <div id={'main'} className={style.section}>
 
             <Slide>
@@ -18,35 +19,49 @@ export const Main: React.FC = () => {
                     <div className={style.shortInfo}>
                         <ul>
                             <div>
-                                <li>Web development</li>
+                                <li><ReactTypingEffect
+                                    text={'Web development'}
+                                    className={style.typing}
+                                    eraseDelay={3000}
+                                /></li>
                             </div>
                             <div>
-                                <li>UI/UX</li>
+                                <li><ReactTypingEffect
+                                    text={'UI/UX'}
+                                    className={style.typing}
+                                    eraseDelay={2000}
+                                /></li>
                             </div>
                             <div>
-                                <li>Optimizing performance</li>
+                                <li><ReactTypingEffect text={'Optimizing performance'} className={style.typing}/></li>
                             </div>
                         </ul>
                     </div>
-                    <div className={style.counterInfo}>
+                   <div className={style.counterInfo}>
                         <ul>
                             <li>
-                                <div className={style.listInner}><h3>Never</h3><span>Give up</span></div>
+                                <div className={style.listInner}><h3>Do what</h3><span>you<br/>love</span></div>
                             </li>
                             <li>
-                                <div className={style.listInner}><h3>Some</h3><span>Happy <br/> Customers</span></div>
+                                <div className={style.listInner}><h3>Love</h3><span>what<br/>you do</span></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </Slide>
-
             <Slide direction={'right'}>
                 <div className={style.profilePhoto}>
-                    <img className={style.photo1} src={me} alt="photo2"/>
+                    <div className={style.loader}>
+                    </div>
+                    <div className={style.loader2}>
+                    </div>
+
+                    <img className={style.photo1} src={me} alt="photo1"/>
+                    <img className={style.photo2} src={me2} alt="photo2"/>
                 </div>
             </Slide>
 
         </div>
+
     );
 };

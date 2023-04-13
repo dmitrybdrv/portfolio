@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from 'features/contact/Contact.module.scss'
 import {FaLocationArrow} from 'react-icons/fa'
 import {AiOutlinePhone, AiTwotoneMail} from 'react-icons/ai'
@@ -9,7 +9,7 @@ import {Slide} from "react-awesome-reveal";
 export type ContactType = {}
 
 export const Contact: React.FC<ContactType> = ({}) => {
-
+const [onHover, setHoverOn] = useState(false)
 
     return (
 
@@ -24,15 +24,21 @@ export const Contact: React.FC<ContactType> = ({}) => {
 
                         <div className={style.infoSide}>
                             <p>
-                                Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and
-                                8:00 p.m. ET, Monday through Friday
+                                Please fill out the form on this section to contact with me. I will get back to you,
+                                thank you for your patience.
                             </p>
 
                             <ul>
-                                <li><FaLocationArrow/><span>Place, Tokyo, Japan</span></li>
-                                <li><AiOutlinePhone/><span>+77 033 442 55 57</span></li>
-                                <li><AiTwotoneMail/><span>dodo@gmail.com</span></li>
-                                <li><ImEarth/><span>www.domain.com</span></li>
+                                <li><FaLocationArrow/><span>Moscow, Russia</span></li>
+                                <li>
+                                    <AiOutlinePhone/>
+                                    <span>+7-924-841{onHover
+                                        ? <span onDoubleClick={() => setHoverOn(!onHover)}>{'10-31'}</span>
+                                        : <span className={style.showNum} onDoubleClick={() => setHoverOn(!onHover)}>{'double click here!'}</span>}
+                                    </span>
+                                </li>
+                                <li><AiTwotoneMail/><span>127.0.1.2@protonmail.com</span></li>
+                                <li><ImEarth/><span>soon...</span></li>
                             </ul>
 
                         </div>
@@ -40,7 +46,7 @@ export const Contact: React.FC<ContactType> = ({}) => {
                         <div className={style.formSide}>
                             <div className={style.input}><input type="text" placeholder={'Name'}/></div>
                             <div><input type="text" placeholder={'Email'}/></div>
-                            <div><textarea  cols={1} rows={3} placeholder={'Message'}></textarea></div>
+                            <div><textarea cols={1} rows={3} placeholder={'Message'}></textarea></div>
                             <button>Submit</button>
                         </div>
 

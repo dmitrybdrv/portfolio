@@ -4,20 +4,26 @@
 .section {
   @include section(100vh, center, $background_secondary);
 
+
   .skillsContainer {
     @include container;
-    place-content: center;
-    display: block;
+    display: inline-block;
 
     .skillWrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: inline-block;
 
-      p {
+      .skillsDescription {
 
-        color: $white_color;
-        margin: 20px;
+        p {
+          color: $white_color;
+          margin: 20px;
+        }
+      }
+
+      .slillset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
     }
