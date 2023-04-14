@@ -7,11 +7,10 @@ import ReactTypingEffect from 'react-typing-effect';
 
 export const Main: React.FC = () => {
 
-
     return (
         <div id={'main'} className={style.section}>
 
-            <Slide>
+
                 <div className={style.greetingBlock}>
                     <span>Dmitry Bodrov</span>
                     <h3>Hi, I`m Dmitry<br/>
@@ -33,11 +32,13 @@ export const Main: React.FC = () => {
                                 /></li>
                             </div>
                             <div>
-                                <li><ReactTypingEffect text={'Optimizing performance'} className={style.typing}/></li>
+                                <li><ReactTypingEffect
+                                    text={'Optimizing performance'}
+                                    className={style.typing}/></li>
                             </div>
                         </ul>
                     </div>
-                   <div className={style.counterInfo}>
+                    <div className={style.counterInfo}>
                         <ul>
                             <li>
                                 <div className={style.listInner}><h3>Do what</h3><span>you<br/>love</span></div>
@@ -48,8 +49,9 @@ export const Main: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-            </Slide>
-            <Slide direction={'right'}>
+
+
+
                 <div className={style.profilePhoto}>
                     <div className={style.loader}>
                     </div>
@@ -57,11 +59,9 @@ export const Main: React.FC = () => {
                     </div>
 
                     <img className={style.photo1} src={me} alt="photo1"/>
-                    <img className={style.photo2} src={me2} alt="photo2"/>
+                   <img className={style.photo2} src={me2} alt="photo2"/>
                 </div>
-            </Slide>
 
-        </div>
 
-    );
+        </div>);
 };

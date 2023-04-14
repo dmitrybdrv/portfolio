@@ -22,10 +22,7 @@ export const Skills: React.FC<SkillsPropsType> = ({}) => {
 
             <div className={style.skillsContainer}>
 
-                <Slide direction={'right'}>
-
                     <Title title={'Skills'} description={'Hard skills'}/>
-
 
                     <div className={style.skillWrapper}>
 
@@ -51,11 +48,7 @@ export const Skills: React.FC<SkillsPropsType> = ({}) => {
 
                     </div>
 
-                </Slide>
-
-
             </div>
 
-        </div>
-    );
+        </div>);
 };

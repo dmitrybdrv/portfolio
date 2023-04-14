@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
 
                 <div className={style.projectsContainer}>
 
-                    <Slide>
+
                     <Title title={'Portfolio'} description={'SELECTED WORKS'}/>
                         <div className={style.projectsWrapper}>
 
@@ -45,14 +45,10 @@ export const Projects: React.FC = () => {
                                     <Project image={td} description={'To do list'} projectLink={'https://dmitrybdrv.github.io/todo_list/#/login'}/>
                                     <Project image={empt} description={'In progress...'} projectLink={'https://www.timeanddate.com/worldclock/'}/>
 
-
                                 </motion.div>
-
-
                             </motion.div>
 
                         </div>
-                    </Slide>
 
                 </div>
 

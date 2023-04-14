@@ -15,7 +15,7 @@ const [onHover, setHoverOn] = useState(false)
 
         <section id={'contact'} className={style.section}>
 
-            <Slide>
+
                 <div className={style.contactContainer}>
 
                     <Title title={'Contact'} description={'GET IN TOUCH'}/>
@@ -53,7 +53,7 @@ const [onHover, setHoverOn] = useState(false)
                     </div>
 
                 </div>
-            </Slide>
+
 
         </section>
 
