@@ -12,13 +12,11 @@ function App() {
     return (
         <div className={style.app}>
             <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-
-
-            <Contact/>
-            <Footer/>
+           <Main/>
+            {/*  <Skills/>*/}
+            {/*<Projects/>*/}
+        {/*    <Contact/>*/}
+          {/*  <Footer/>*/}
         </div>
     );
 }

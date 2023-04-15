@@ -2,18 +2,16 @@
 @import 'common/mixins';
 
 header {
-  @include section(10px, space-between, $background_primary);
-  width: 100%;
+  @include section(50px, space-between, $background_primary);
   position: fixed;
+  width: 100%;
   opacity: 50%;
   z-index: 90;
   padding: 20px;
 
-  .navigation {
-    padding-right: 10%;
-  }
 
   h3 {
+    width: fit-content;
     opacity: 20%;
     color: $light_color;
     letter-spacing: 0.5rem;
@@ -21,16 +19,17 @@ header {
     padding-left: 10px;
   }
 
+  .navigation {
+    width: fit-content;
+  }
 
-  @media screen and (max-width: 480px) {
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+
+ @media screen and (max-width: 652px) {
+   display: inline-block;
 
     h3 {
       display: none;
     }
-
   }
 
 }

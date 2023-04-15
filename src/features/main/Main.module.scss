@@ -2,13 +2,13 @@
 @import 'common/mixins';
 
 .section {
-  @include section(100vh, space-between, $background_primary);
+  @include section(100vh, space-around, $background_primary);
   @include container();
-  justify-content: space-around;
-  padding-bottom: 50px;
+  padding-top: 80px;
   width: 100%;
 
   .greetingBlock {
+    background: #1f2a3f;
     top: 0;
     position: relative;
     transition: all .4s ease;
@@ -31,6 +31,7 @@
       text-transform: uppercase;
       margin-bottom: 25px;
       font-family: $extraBold_Font;
+      flex-wrap: wrap;
     }
 
     .shortInfo {
@@ -41,11 +42,11 @@
       margin-bottom: 35px;
 
       & ul {
+        background: red;
         display: grid;
         margin: 0;
         list-style-type: none;
         padding: 0;
-        background: transparent;
         border: 0;
         vertical-align: baseline;
         outline: none;
@@ -126,49 +127,33 @@
   }
 
   .profilePhoto {
+    width: 350px;
+    background: #41491a;
     display: flex;
     position: relative;
+    padding: 50px 0;
+
 
     .loader {
-      @include loader(250px, 250px, 0, 4s)
+      @include loader(350px, 350px, 3, 4s);
     }
+
     .loader:before {
-      @include loaderBeforeAfter(6px, 6px, 6px, 6px, 1000)
+      @include loaderBeforeAfter(1px, 1px, 1px, 1px, 3);
     }
+
     .loader:after {
-      @include loaderBeforeAfter(0px, 0px, 0px, 0px, 1);
+      @include loaderBeforeAfter(0px, 0px, 0px, 0px, 3);
       background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
     }
-    .photo1 {
+
+    .photo {
       position: absolute;
       border-radius: 50%;
-      top: 0;
-      width: 250px;
-      height: 250px;
-      z-index: 2;
+      width: 350px;
+      height: 350px;
+      z-index: 4;
     }
-
-    .loader2 {
-      @include loader(294px, 294px, -1, 2s);
-      top: 0;
-      bottom: 0;
-      left: -80px;
-    }
-    .loader2:before {
-      @include loaderBeforeAfter(6px, 6px, 6px, 6px, 1);
-    }
-    .loader2:after {
-      @include loaderBeforeAfter(0px, 0px, 0px, 0px, -3);
-      background: linear-gradient(45deg, transparent, transparent 40%, #05f8af);
-    }
-    .photo2 {
-      position: absolute;
-      border-radius: 50%;
-      bottom: 0;
-      right: 73px;
-      z-index: 1;
-    }
-
 
     @keyframes animate {
       0% {
@@ -181,16 +166,23 @@
       }
     }
 
-
   }
 
-  @media screen and (max-width: 768px) {
-    padding: 40px;
-  }
-  @media screen and (max-width: 320px) {
-    .greetingBlock h3 {
-      font-size: 30px;
+  @media screen and (max-width: 1160px) {
+
+    display: grid;
+    justify-items: center;
+    .loader {
+
     }
+    .photo {
+
+    }
+
+  }
+
+
+  @media screen and (max-width: 320px) {
 
   }
 

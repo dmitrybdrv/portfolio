@@ -4,10 +4,8 @@ import {Link} from 'react-scroll';
 
 
 
-export type NavType = {}
 
-
-export const Nav: React.FC<NavType> = ({}) => {
+export const Nav: React.FC = () => {
     return (
         <div className={style.nav}>
             <Link to={'main'} activeClass={style.active} spy={true} smooth={true} offset={0} duration={500}>
