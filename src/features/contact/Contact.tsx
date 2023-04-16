@@ -9,18 +9,19 @@ import {Slide} from "react-awesome-reveal";
 export type ContactType = {}
 
 export const Contact: React.FC<ContactType> = ({}) => {
-const [onHover, setHoverOn] = useState(false)
+    const [onHover, setHoverOn] = useState(false)
 
     return (
 
         <section id={'contact'} className={style.section}>
 
-
+            <Slide direction={'left'}>
                 <div className={style.contactContainer}>
 
                     <Title title={'Contact'} description={'GET IN TOUCH'}/>
 
                     <div className={style.wrapper}>
+
 
                         <div className={style.infoSide}>
                             <p>
@@ -34,7 +35,8 @@ const [onHover, setHoverOn] = useState(false)
                                     <AiOutlinePhone/>
                                     <span>+7-924-841{onHover
                                         ? <span onDoubleClick={() => setHoverOn(!onHover)}>{'10-31'}</span>
-                                        : <span className={style.showNum} onDoubleClick={() => setHoverOn(!onHover)}>{'double click here!'}</span>}
+                                        : <span className={style.showNum}
+                                                onDoubleClick={() => setHoverOn(!onHover)}>{'double click here!'}</span>}
                                     </span>
                                 </li>
                                 <li><AiTwotoneMail/><span>127.0.1.2@protonmail.com</span></li>
@@ -50,10 +52,11 @@ const [onHover, setHoverOn] = useState(false)
                             <button>Submit</button>
                         </div>
 
+
                     </div>
 
                 </div>
-
+            </Slide>
 
         </section>
 

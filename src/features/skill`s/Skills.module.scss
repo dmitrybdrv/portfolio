@@ -4,7 +4,6 @@
 .section {
   @include section(100vh, center, $background_secondary);
 
-
   .skillsContainer {
     @include container;
     display: inline-block;

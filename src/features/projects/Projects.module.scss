@@ -2,33 +2,16 @@
 @import 'common/mixins';
 
 .section {
-  @include section(80vh, flex-start, $background_primary);
+  @include section(80vh, center, $background_primary);
+
 
   .projectsContainer {
-    @include container;
-    place-content: center;
-
-    .projectsWrapper {
-      display: flex;
-
-      .carousel {
-        display: flex;
-        cursor: grab;
-        overflow: hidden;
-
-        .inner_ {
-          display: flex;
-
-        }
-
-      }
-
-    }
+    @include container();
 
   }
 
   @media only screen and (max-width: 768px) {
-    width: 10%;
+
   }
 
 }
