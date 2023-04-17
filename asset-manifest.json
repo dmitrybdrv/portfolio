@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfo/static/css/main.28a7689e.css",
-    "main.js": "/portfo/static/js/main.0641c433.js",
+    "main.js": "/portfo/static/js/main.8466cefe.js",
     "static/js/787.1f11dfe9.chunk.js": "/portfo/static/js/787.1f11dfe9.chunk.js",
     "static/media/AnyConv.com__Poppins-Regular.woff2": "/portfo/static/media/AnyConv.com__Poppins-Regular.202bc7e425c7a8926961.woff2",
     "static/media/AnyConv.com__Poppins-Bold.woff2": "/portfo/static/media/AnyConv.com__Poppins-Bold.8380d1b7b29b8c68a35b.woff2",
@@ -28,11 +28,11 @@
     "static/media/typescript.svg": "/portfo/static/media/typescript.205d385f7625a2144da3ab124d609590.svg",
     "index.html": "/portfo/index.html",
     "main.28a7689e.css.map": "/portfo/static/css/main.28a7689e.css.map",
-    "main.0641c433.js.map": "/portfo/static/js/main.0641c433.js.map",
+    "main.8466cefe.js.map": "/portfo/static/js/main.8466cefe.js.map",
     "787.1f11dfe9.chunk.js.map": "/portfo/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28a7689e.css",
-    "static/js/main.0641c433.js"
+    "static/js/main.8466cefe.js"
   ]
 }
