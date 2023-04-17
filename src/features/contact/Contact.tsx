@@ -33,8 +33,8 @@ export const Contact: React.FC<ContactType> = ({}) => {
                                 <li><FaLocationArrow/><span>Moscow, Russia</span></li>
                                 <li>
                                     <AiOutlinePhone/>
-                                    <span>+7-924-841{onHover
-                                        ? <span onDoubleClick={() => setHoverOn(!onHover)}>{'10-31'}</span>
+                                    <span>+7-909-948{onHover
+                                        ? <span onDoubleClick={() => setHoverOn(!onHover)}>{'09-13'}</span>
                                         : <span className={style.showNum}
                                                 onDoubleClick={() => setHoverOn(!onHover)}>{'double click here!'}</span>}
                                     </span>

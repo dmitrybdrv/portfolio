@@ -34,12 +34,19 @@
               color: $light_color;
               padding-left: 10px;
               font-size: 18px;
+
+
             }
 
             & span .showNum {
               color: $primary_color;
             }
 
+
+
+          }
+          li span:hover:nth-child(1) {
+            cursor: pointer;
           }
         }
 
