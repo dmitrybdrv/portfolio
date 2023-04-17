@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/portfo/static/css/main.89807037.css",
-    "main.js": "/portfo/static/js/main.a4c18994.js",
+    "main.css": "/portfo/static/css/main.28a7689e.css",
+    "main.js": "/portfo/static/js/main.0641c433.js",
     "static/js/787.1f11dfe9.chunk.js": "/portfo/static/js/787.1f11dfe9.chunk.js",
-    "static/media/todo.jpg": "/portfo/static/media/todo.4c2ad1a08d1dcab9e80d.jpg",
-    "static/media/socialN.jpg": "/portfo/static/media/socialN.642fa5f3724366fd665a.jpg",
-    "static/media/counter.jpg": "/portfo/static/media/counter.77dcd391e79a3eab3997.jpg",
-    "static/media/Empty.jpg": "/portfo/static/media/Empty.34381a210b95a9da526e.jpg",
     "static/media/AnyConv.com__Poppins-Regular.woff2": "/portfo/static/media/AnyConv.com__Poppins-Regular.202bc7e425c7a8926961.woff2",
     "static/media/AnyConv.com__Poppins-Bold.woff2": "/portfo/static/media/AnyConv.com__Poppins-Bold.8380d1b7b29b8c68a35b.woff2",
     "static/media/AnyConv.com__Poppins-ExtraBold.woff2": "/portfo/static/media/AnyConv.com__Poppins-ExtraBold.8a69d9f03bdd3b9fcc90.woff2",
     "static/media/AnyConv.com__Poppins-Thin.woff2": "/portfo/static/media/AnyConv.com__Poppins-Thin.adbd3f3083d75289a620.woff2",
+    "static/media/counter.jpg": "/portfo/static/media/counter.2c7fcf8b514cce1f9d2c.jpg",
+    "static/media/socialN.jpg": "/portfo/static/media/socialN.da0ce34688f9c7afafce.jpg",
     "static/media/profilePhoto.png": "/portfo/static/media/profilePhoto.8d5e0892ae577fe730e8.png",
-    "static/media/me22.png": "/portfo/static/media/me22.0208fc8bc2ff87191357.png",
     "static/media/AnyConv.com__Poppins-Regular.woff": "/portfo/static/media/AnyConv.com__Poppins-Regular.c496ea9e1a7e635b4aec.woff",
     "static/media/AnyConv.com__Poppins-Bold.woff": "/portfo/static/media/AnyConv.com__Poppins-Bold.40b4e64bce0f7fa6cc17.woff",
     "static/media/AnyConv.com__Poppins-ExtraBold.woff": "/portfo/static/media/AnyConv.com__Poppins-ExtraBold.5392ebf1da7f2d2d93fc.woff",
     "static/media/AnyConv.com__Poppins-Thin.woff": "/portfo/static/media/AnyConv.com__Poppins-Thin.29b66f2b3efa4d207d6f.woff",
     "static/media/react.svg": "/portfo/static/media/react.e184e9098d6a84689b653b5dff34e1bb.svg",
     "static/media/AnyConv.com__tet.woff2": "/portfo/static/media/AnyConv.com__tet.980c7c27e0007e16b5b5.woff2",
+    "static/media/Empty.jpg": "/portfo/static/media/Empty.02fada686a2bebfdd7b1.jpg",
     "static/media/AnyConv.com__tet.woff": "/portfo/static/media/AnyConv.com__tet.4c181d3b9d03b521ef4b.woff",
     "static/media/sass.svg": "/portfo/static/media/sass.9828e6c7c9d6bab6c7965f62bd23b2ef.svg",
     "static/media/redux.svg": "/portfo/static/media/redux.3e89892383bc341c82cd9a6115e42d4e.svg",
@@ -29,12 +27,12 @@
     "static/media/javascript.svg": "/portfo/static/media/javascript.46505e51012fcc2b9095c8125e6fd075.svg",
     "static/media/typescript.svg": "/portfo/static/media/typescript.205d385f7625a2144da3ab124d609590.svg",
     "index.html": "/portfo/index.html",
-    "main.89807037.css.map": "/portfo/static/css/main.89807037.css.map",
-    "main.a4c18994.js.map": "/portfo/static/js/main.a4c18994.js.map",
+    "main.28a7689e.css.map": "/portfo/static/css/main.28a7689e.css.map",
+    "main.0641c433.js.map": "/portfo/static/js/main.0641c433.js.map",
     "787.1f11dfe9.chunk.js.map": "/portfo/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89807037.css",
-    "static/js/main.a4c18994.js"
+    "static/css/main.28a7689e.css",
+    "static/js/main.0641c433.js"
   ]
 }
