@@ -1,7 +1,7 @@
-import image1 from './img/socialN.jpg'
-import image2 from './img/counter.jpg'
-import image3 from './img/todo.jpg'
-import image4 from './img/Empty.jpg'
+import image1 from './socialN.jpg';
+import image2 from './counter.jpg';
+import image3 from './todo.jpg';
+import image4 from './Empty.jpg';
 
 export const projects = [
     {id: 1, pic: image1, way: 'https://dmitrybdrv.github.io/Social_network/', title: 'Social network', description: 'lorem10 nesnflkjse skejfbksef esfjbsekufgnef sekfseukgf'},

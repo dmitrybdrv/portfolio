@@ -1,7 +1,7 @@
 import React from 'react';
 import style from 'features/main/Main.module.scss'
 import {Slide} from "react-awesome-reveal";
-import me from 'assets/img/profilePhoto.png'
+import me from 'assets/profilePhoto.jpg'
 import ReactTypingEffect from 'react-typing-effect';
 
 export const Main: React.FC = () => {

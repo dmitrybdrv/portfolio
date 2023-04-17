@@ -132,7 +132,7 @@
     padding: 50px 0;
 
     .loader {
-      @include loader(350px, 350px, 3, 4s);
+      @include loader(360px, 360px, 3, 4s);
     }
 
     .loader:before {
@@ -145,10 +145,12 @@
     }
 
     .photo {
+      top: 55px;
+      left: 2px;
       position: absolute;
       border-radius: 50%;
-      width: 350px;
-      height: 350px;
+      width: 347px;
+      height: 349px;
       z-index: 4;
     }
 
