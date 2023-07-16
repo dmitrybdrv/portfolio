@@ -22,7 +22,6 @@ export const Contact: React.FC<ContactType> = ({}) => {
 
                     <div className={style.wrapper}>
 
-
                         <div className={style.infoSide}>
                             <p>
                                 Please fill out the form on this section to contact with me. I will get back to you,
@@ -51,7 +50,6 @@ export const Contact: React.FC<ContactType> = ({}) => {
                             <div><textarea cols={1} rows={3} placeholder={'Message'}></textarea></div>
                             <button>Submit</button>
                         </div>
-
 
                     </div>
 
