@@ -4,13 +4,8 @@
 .section {
   @include section(80vh, center, $background_primary);
 
-
   .projectsContainer {
     @include container();
-
-  }
-
-  @media only screen and (max-width: 768px) {
 
   }
 

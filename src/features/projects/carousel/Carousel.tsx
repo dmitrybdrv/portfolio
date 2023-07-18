@@ -1,41 +1,53 @@
 import React from 'react';
 import {Project} from "features/projects/carousel/project/Project";
-import {ProjectsType} from 'assets/CarouselData';
-import Slider from "react-slick";
-import style from './Carousel.module.scss'
+import {ProjectsType} from 'common/CarouselData';
+import Carousel from "nuka-carousel"
+import styled from "styled-components";
 
 
-
-type CariouselPropsType = {
+type CarouselPropsType = {
     projects: Array<ProjectsType>
 }
-export const Carousel: React.FC<CariouselPropsType> = ({projects}) => {
+
+const Wrapper = styled.div`
+  @media (max-width: 1200px) {
+    display: inline-block;
+    justify-content: center;
+    background: red;
+    width: 80%;
+  }
+`;
+
+export const ProjectCarousel: React.FC<CarouselPropsType> = ({projects}) => {
 
 
-   const myProjects = projects.map(el =>
-       <Project
-           key={el.id}
-           image={el.pic}
-           title={el.title}
-           projectLink={el.way}
-           description={el.description}
-       />)
+    const myProjects = projects.map(el =>
+            <Project
+                key={el.id}
+                image={el.pic}
+                title={el.title}
+                projectLink={el.way}
+                description={el.description}
+            />
+       )
 
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
+        autoplay: true,
+        autoplayInterval: 4000,
+        wrapAround: true,
         slidesToShow: 3,
-        slidesToScroll: 1,
-    };
+        withoutControls: true
+    }
+
+
 
 
     return (
-        <div>
-            <Slider {...settings} className={style.slider}>
+        <Wrapper>
+            <Carousel {...settings}>
                 {myProjects}
-            </Slider>
-        </div>
+            </Carousel>
+        </Wrapper>
 
     );
 };

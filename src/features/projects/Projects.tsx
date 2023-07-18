@@ -2,7 +2,8 @@ import React from 'react';
 import style from 'features/projects/Projects.module.scss'
 import {Title} from 'common/components/Title';
 import {Slide} from 'react-awesome-reveal';
-import {Carousel} from './carousel/Carousel';
+import {ProjectCarousel} from './carousel/Carousel';
+import {projects} from '../../common/CarouselData'
 
 
 export const Projects: React.FC = () => {
@@ -14,7 +15,7 @@ export const Projects: React.FC = () => {
             <div className={style.projectsContainer}>
                 <Slide direction={'right'}>
                     <Title title={'Portfolio'} description={'SELECTED WORKS'}/>
-                    {/*<Carousel projects={projects}/>*/}
+                    <ProjectCarousel projects={projects}/>
                 </Slide>
             </div>
 
