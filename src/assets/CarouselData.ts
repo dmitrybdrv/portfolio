@@ -3,7 +3,7 @@ import image2 from './counter.jpg';
 import image3 from './todo.jpg';
 import image4 from './Empty.jpg';
 
-export const projects = [
+ const projects = [
     {id: 1, pic: image1, way: 'https://dmitrybdrv.github.io/Social_network/', title: 'Social network', description: 'lorem10 nesnflkjse skejfbksef esfjbsekufgnef sekfseukgf'},
     {id: 2, pic: image2, way: 'https://dmitrybdrv.github.io/counter/', title: 'Counter', description: 'lotfhfthfth nesnflkjse skejfbksef esfjbsekufgnef sekfseukg ertkelte e4te'},
     {id: 3, pic: image3, way: 'https://dmitrybdrv.github.io/todo_list/#/login', title: 'To do list', description: 'Q nesnflkjse skejfbksef esfjbsekufgnef sekfseukg'},
