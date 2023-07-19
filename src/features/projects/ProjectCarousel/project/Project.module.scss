@@ -2,10 +2,7 @@
 
 .proj {
   display: flex;
-  justify-content: space-around;
-  margin: 10px;
-  flex-wrap: wrap;
-
+  justify-content: center;
 
   .card {
     width: 300px;
@@ -56,7 +53,7 @@
       transform: translateY(30px);
       transition: 0.5s all;
       padding: 10px;
-      font-family: $regular_Font;
+      font-family: $bold_Font;
     }
     & .info a {
       text-decoration: none;
@@ -84,5 +81,20 @@
     }
   }
 
+  @media screen and (max-width: 968px){
+    .card {
+      width: 200px;
+      height: 300px;
+      & .info p {
+        font-size: 14px;
+      }
 
+    }
+  }
+  @media screen and (max-width: 600px){
+    .card {
+      width: 200px;
+      height: 300px;
+    }
+  }
 }

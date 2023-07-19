@@ -1,6 +1,5 @@
 import React from 'react';
 import style from 'features/main/Main.module.scss'
-import {Slide} from "react-awesome-reveal";
 import me from 'assets/img/profile.png'
 import ReactTypingEffect from 'react-typing-effect';
 
@@ -9,7 +8,6 @@ export const Main: React.FC = () => {
     return (
         <div id={'main'} className={style.section}>
 
-            <Slide direction={'left'}>
                 <div className={style.greetingBlock}>
                     <span>Dmitry Bodrov</span>
                     <h3>Hi, I`m Dmitry<br/>
@@ -48,15 +46,12 @@ export const Main: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-            </Slide>
 
-           <Slide direction={'right'}>
                 <div className={style.profilePhoto}>
                 <div className={style.loader}>
                 </div>
                 <img className={style.photo} src={me} alt={'my avatar'}/>
             </div>
-            </Slide>
             
         </div>);
 };

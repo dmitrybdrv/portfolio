@@ -1,9 +1,8 @@
 import React from 'react';
 import style from 'features/projects/Projects.module.scss'
 import {Title} from 'common/components/Title';
-import {Slide} from 'react-awesome-reveal';
-import {ProjectCarousel} from './carousel/Carousel';
 import {projects} from '../../common/CarouselData'
+import {ProjectCarousel} from "./ProjectCarousel/ProjectCarousel";
 
 
 export const Projects: React.FC = () => {
@@ -11,14 +10,21 @@ export const Projects: React.FC = () => {
 
     return (
         <div id={'projects'} className={style.section}>
-
             <div className={style.projectsContainer}>
-                <Slide direction={'right'}>
-                    <Title title={'Portfolio'} description={'SELECTED WORKS'}/>
-                    <ProjectCarousel projects={projects}/>
-                </Slide>
+                <div className={style.projectsWrapper}>
+                    <div className={style.projectsLeft}>
+                        <Title title={'Portfolio'} description={'SELECTED WORKS'}/>
+                        <p>
+                            Here you can find my projects, and most of them are available for testing. I've put in a lot of
+                            effort to create interesting projects, and I hope you enjoy using and exploring them. Enjoy your
+                            browsing!
+                        </p>
+                    </div>
+                    <div className={style.projectsRight}>
+                        <ProjectCarousel projects={projects}/>
+                    </div>
+                </div>
             </div>
-
         </div>
     );
 };

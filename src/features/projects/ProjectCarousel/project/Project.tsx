@@ -1,5 +1,5 @@
 import React from 'react';
-import style from 'features/projects/carousel/project/Project.module.scss'
+import style from 'features/projects/ProjectCarousel/project/Project.module.scss'
 
 
 export type ProjectType = {

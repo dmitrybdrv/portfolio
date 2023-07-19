@@ -11,7 +11,6 @@ import redux from 'assets/img/icons/redux.svg'
 import typescript from 'assets/img/icons/typescript.svg'
 import {Skill} from "features/skill`s/skill/Skill";
 import {Title} from 'common/components/Title';
-import {Slide} from 'react-awesome-reveal';
 
 
 export const Skills: React.FC = () => {
@@ -20,8 +19,6 @@ export const Skills: React.FC = () => {
         <div id='skills' className={style.section}>
 
             <div className={style.skillsContainer}>
-
-                <Slide direction={'left'}>
                     <Title title={'Skills'} description={'Hard skills'}/>
                     <div className={style.skillWrapper}>
                             <div className={style.skillsDescription}>
@@ -45,8 +42,6 @@ export const Skills: React.FC = () => {
                                 <Skill title={'Typescript'} image={typescript} description={''}/>
                             </div>
                     </div>
-                </Slide>
-
             </div>
 
         </div>);

@@ -1,25 +1,15 @@
 import React from 'react';
-import {Project} from "features/projects/carousel/project/Project";
+import {Project} from "features/projects/ProjectCarousel/project/Project";
 import {ProjectsType} from 'common/CarouselData';
 import Carousel from "nuka-carousel"
-import styled from "styled-components";
+import style from './ProjectCarousel.module.scss'
 
 
 type CarouselPropsType = {
     projects: Array<ProjectsType>
 }
 
-const Wrapper = styled.div`
-  @media (max-width: 1200px) {
-    display: inline-block;
-    justify-content: center;
-    background: red;
-    width: 80%;
-  }
-`;
-
 export const ProjectCarousel: React.FC<CarouselPropsType> = ({projects}) => {
-
 
     const myProjects = projects.map(el =>
             <Project
@@ -35,19 +25,14 @@ export const ProjectCarousel: React.FC<CarouselPropsType> = ({projects}) => {
         autoplay: true,
         autoplayInterval: 4000,
         wrapAround: true,
-        slidesToShow: 3,
-        withoutControls: true
+        slidesToShow: 1,
+        withoutControls: true,
+        cellSpacing: 20,
     }
 
-
-
-
     return (
-        <Wrapper>
-            <Carousel {...settings}>
+            <Carousel {...settings} className={style.projectCarouselContainer}>
                 {myProjects}
             </Carousel>
-        </Wrapper>
-
     );
 };

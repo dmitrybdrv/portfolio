@@ -3,10 +3,46 @@
 
 .section {
   @include section(80vh, center, $background_primary);
+  align-items: center;
 
   .projectsContainer {
     @include container();
+    width: 100%;
 
+    .projectsWrapper {
+      display: flex;
+
+      .projectsLeft {
+        width: 50%;
+        & p {
+          color: #fff;
+        }
+      }
+      .projectsRight {
+        width: 50%;
+      }
+    }
   }
 
+  @media screen and (max-width: 1200px){
+    .projectsContainer {
+      .projectsWrapper {
+        flex-direction: column;
+        .projectsLeft {
+          width: 100%;
+          order: 1;
+          margin: 10px 0;
+        }
+        .projectsRight {
+          width: 100%;
+          order: 2;
+          margin: 10px 0;
+          div {
+            text-align: center;
+          }
+
+        }
+      }
+    }
+  }
 }
