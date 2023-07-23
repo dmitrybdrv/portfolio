@@ -5,7 +5,6 @@ import {FaTelegramPlane} from 'react-icons/fa'
 import {TbBrandGithub} from 'react-icons/tb'
 
 export const Footer: React.FC = () => {
-
     return (
         <footer>
             <div className={style.footerContainer}>

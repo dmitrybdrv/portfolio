@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.formSide {
+
+  input {
+    background: transparent;
+    font-family: $regular_Font, sans-serif;
+    width: 100%;
+    line-height: 2.4rem;
+    border: 1px solid #636465;
+    margin: 10px 0;
+    padding-left: 10px;
+    color: $white_color;
+  }
+
+  textarea {
+    font-family: $regular_Font, sans-serif;
+    width: 100%;
+    resize: none;
+    border: 1px solid #636465;
+    background: transparent;
+    padding-left: 10px;
+    color: $white_color;
+  }
+
+  button {
+    color: #000;
+    margin: 10px 0;
+    width: 100%;
+    line-height: 2.4rem;
+    background: $primary_color;
+    border: 1px;
+    font-size: 18px;
+  }
+
+  button:hover {
+    color: $white_color;
+    cursor: pointer;
+    background: $black_color;
+  }
+}

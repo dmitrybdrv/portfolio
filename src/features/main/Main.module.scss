@@ -204,14 +204,14 @@
     }
 
     .profilePhoto {
-      justify-content: center;
-      width: fit-content;
 
       .loader {
-        @include loader(253px, 250px, 3, 4s);
+        @include loader(250px, 250px, 3, 4s);
+        bottom: 3px;
       }
 
       .photo {
+        position: absolute;
         width: 250px;
         height: auto;
       }
@@ -223,6 +223,7 @@
 
     .greetingBlock {
       flex-wrap: wrap;
+
       & h3 {
         font-size: 27px;
         font-weight: 400;

@@ -1,5 +1,3 @@
-import React from 'react';
-import style from 'features/skill`s/Skills.module.scss'
 import react from 'assets/img/icons/react.svg'
 import git from 'assets/img/icons/git.svg'
 import postman from 'assets/img/icons/postman.svg'
@@ -10,14 +8,15 @@ import js from 'assets/img/icons/javascript.svg'
 import redux from 'assets/img/icons/redux.svg'
 import typescript from 'assets/img/icons/typescript.svg'
 import {Skill} from "features/skill`s/skill/Skill";
-import {Title} from 'common/components/Title';
+import {Title} from 'common/components/Title/Title';
+import style from 'features/skill`s/Skills.module.scss'
 
-
-export const Skills: React.FC = () => {
-
+/**
+ * Skills - блок со списком изученных технологий
+ */
+export const Skills = () => {
     return (
         <div id='skills' className={style.section}>
-
             <div className={style.skillsContainer}>
                     <Title title={'Skills'} description={'Hard skills'}/>
                     <div className={style.skillWrapper}>

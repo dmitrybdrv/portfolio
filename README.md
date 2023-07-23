@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+<h1>Project "Portfolio"</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>
+Project "Portfolio" is a single-page website developed using React and TypeScript. This website is a personal profile
+page, showcasing the person professional accomplishments, acquired knowledge, and programming skills. It provides
+information about the materials studied and technologies mastered, along with links to projects created during the
+learning process. Some of these projects are currently in progress, while others are being refined and improved.
+</p>
 
-## Available Scripts
+<h2>Information</h2>
+<p>
+The website contains information about me, including name, contact details, and a brief description of 
+ professional experience and skills.
+</p>
 
-In the project directory, you can run:
+<h2>Studied Materials and Technologies</h2>
+<p>
+You can explore a list of the materials and programming technologies that have been studied. This may include 
+programming languages, frameworks, libraries, and other technologies that I am proficient in at the time of writing this block.
+</p>
 
-### `yarn start`
+<h2>Technologies</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project is implemented using React and TypeScript as its foundation. To simplify development and create a 
+visually appealing user interface, the following libraries were utilized:
+<ul>
+<li>Mantine - a library of components that offers ready-made design elements for rapid development.</li>
+<li>Axios - a library for handling HTTP requests, which can be used, for example, to retrieve data about projects.</li>
+<li>Nuka Carousel - a component for creating carousels and sliders, utilized for visualizing the project gallery.</li>
+<li>React Typing Effect - a component for creating text typing animations, adding interactivity to the page.</li>
+</ul>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2>Projects</h2>
+<p>
+On my page, you will also find links to completed projects that I have created during my learning process. 
+Visitors can explore the products that have been successfully developed and are ready for demonstration. 
+Some of them are being refined and improved, while others are still in the process of development.
+</p>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

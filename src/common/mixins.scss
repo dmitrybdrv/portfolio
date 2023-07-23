@@ -16,6 +16,9 @@
   flex-wrap: wrap;
 }
 
+/**
+loader, loaderBeforeAfter - реализация анимации вращающегося "диска" под фото аватарки пользователя
+ */
 @mixin loader($width, $height, $zindex, $animationSpeed) {
   z-index: $zindex;
   position: relative;
@@ -25,8 +28,6 @@
   background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
   animation: animate $animationSpeed linear infinite;
 }
-
-
 @mixin loaderBeforeAfter ($top, $left, $right, $bottom, $zindex) {
   content: '';
   position: absolute;

@@ -1,13 +1,12 @@
-import React from 'react';
 import style from 'features/projects/Projects.module.scss'
-import {Title} from 'common/components/Title';
-import {projects} from '../../common/CarouselData'
+import {Title} from 'common/components/Title/Title';
+import {projects} from 'common/CarouselData'
 import {ProjectCarousel} from "./ProjectCarousel/ProjectCarousel";
 
-
-export const Projects: React.FC = () => {
-
-
+/**
+ * Projects - реализация блока с описанием и проектами пользователя
+ */
+export const Projects = () => {
     return (
         <div id={'projects'} className={style.section}>
             <div className={style.projectsContainer}>

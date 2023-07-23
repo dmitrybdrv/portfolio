@@ -1,13 +1,10 @@
-import React from 'react';
 import style from 'features/main/Main.module.scss'
 import me from 'assets/img/profile.png'
 import ReactTypingEffect from 'react-typing-effect';
 
-export const Main: React.FC = () => {
-
+export const Main = () => {
     return (
         <div id={'main'} className={style.section}>
-
                 <div className={style.greetingBlock}>
                     <span>Dmitry Bodrov</span>
                     <h3>Hi, I`m Dmitry<br/>
@@ -46,12 +43,10 @@ export const Main: React.FC = () => {
                         </ul>
                     </div>
                 </div>
-
                 <div className={style.profilePhoto}>
                 <div className={style.loader}>
                 </div>
                 <img className={style.photo} src={me} alt={'my avatar'}/>
             </div>
-            
         </div>);
 };

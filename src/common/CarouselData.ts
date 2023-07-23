@@ -2,7 +2,11 @@ import image1 from '../assets/img/socialNetwork.jpg';
 import image2 from '../assets/img/todoList.jpg';
 import image3 from '../assets/img/inventory.jpg';
 import image4 from '../assets/img/inProgress.jpg';
+import image5 from '../assets/img/gillette.jpg';
 
+/**
+ * projects - массив проектов реализованный в "каруселе".
+ */
 export const projects = [
     {
         id: 1,
@@ -35,6 +39,13 @@ export const projects = [
         title: 'In progress...',
         description: `...приложение находится в разработке и скоро будет доступно :)`
     },
+    {
+        id: 5,
+        pic: image5,
+        way: 'https://gilletteopt.ru/',
+        title: 'Replacement Blade order shop',
+        description: `Магазин для оптового заказа сменных картриджей`
+    }
 
 ]
 

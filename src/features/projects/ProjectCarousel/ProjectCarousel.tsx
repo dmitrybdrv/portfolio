@@ -1,7 +1,7 @@
 import React from 'react';
-import {Project} from "features/projects/ProjectCarousel/project/Project";
-import {ProjectsType} from 'common/CarouselData';
 import Carousel from "nuka-carousel"
+import {ProjectsType} from 'common/CarouselData';
+import {Project} from "features/projects/ProjectCarousel/project/Project";
 import style from './ProjectCarousel.module.scss'
 
 
@@ -9,6 +9,10 @@ type CarouselPropsType = {
     projects: Array<ProjectsType>
 }
 
+/**
+ * ProjectCarousel - компонент - "карусель" проектов пользователя
+ * @param projects - массив проектов
+ */
 export const ProjectCarousel: React.FC<CarouselPropsType> = ({projects}) => {
 
     const myProjects = projects.map(el =>

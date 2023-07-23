@@ -1,11 +1,7 @@
-import React from 'react';
 import style from 'features/header/nav/Nav.module.scss';
 import {Link} from 'react-scroll';
 
-
-
-
-export const Nav: React.FC = () => {
+export const Nav = () => {
     return (
         <div className={style.nav}>
             <Link to={'main'} activeClass={style.active} spy={true} smooth={true} offset={0} duration={500}>
