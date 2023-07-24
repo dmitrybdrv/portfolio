@@ -43,6 +43,5 @@ export const Contact = () => {
                     <Form/>
                 </div>
             </div>
-        </section>
-    );
+        </section>);
 };

@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmitrybdrv.github.io/portfo/",
+  "homepage": "https://dmitrybdrv.github.io/portfolio/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@mantine/core": "^6.0.17",
