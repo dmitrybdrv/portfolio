@@ -22,11 +22,9 @@ export const Skills = () => {
                     <div className={style.skillWrapper}>
                             <div className={style.skillsDescription}>
                                 <p>
-                                    This is my hard skills set for today. Of course this is not the end of the list,
-                                    because
-                                    i trying spend all of my free time to getting new information about new features,
-                                    technologies and programming tools. As i getting new skills, the list will be
-                                    increase.
+                                   This is my skill set for today. 
+                                    This is not a complete list, because in my free time I always try to learn something new about various features, technologies and programming tools. 
+                                    As I gain new skills, the list will be updated.
                                 </p>
                             </div>
                             <div className={style.slillset}>
