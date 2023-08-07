@@ -13,8 +13,8 @@ import {Form} from "common/components/form/Form"
 export const Contact = () => {
 
     const [visibleDigits, setVisibleDigits] = useState(false)
-    const number = process.env.REACT_APP_NUMBER
-    const emailAddress = process.env.REACT_APP_EMAIL_ADDRESS
+    const number = '+7 909948'
+    const emailAddress = '127.0.1.2@protonmail.com'
 
     return (
         <section id={'contact'} className={style.section}>
